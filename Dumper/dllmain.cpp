@@ -17,7 +17,7 @@
 #pragma warning(disable: 26812)
 #pragma warning(disable: 4996)
 
-inline const char* SYSTEMDRIVE = getenv("SystemDrive"); // по дефотлу это C:\\
+inline const char* SYSTEMDRIVE = getenv("SystemDrive"); // по дефолту это C:\\
 
 #define AGENTMODE (std::filesystem::exists(std::string(SYSTEMDRIVE) + "\\AGENTMODE") || std::filesystem::exists(std::string(SYSTEMDRIVE) + "\\AGENTMODE\\"))
 #define TESTMODE (std::filesystem::exists(std::string(SYSTEMDRIVE) + "\\TESTMODE") || std::filesystem::exists(std::string(SYSTEMDRIVE) + "\\TESTMODE\\"))
